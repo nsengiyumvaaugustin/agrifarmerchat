@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amakuru y'Ikirere - Rwanda</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      border-bottom: 3px solid #1e40af;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin: 10px 0;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: #64748b;
+      margin: 5px 0;
+    }
+
+    .card {
+      background: linear-gradient(90deg, #f59e0b, #ea580c);
+      color: #fff;
+      margin: 30px auto;
+      border-radius: 15px;
+      padding: 30px;
+      width: 70%;
+      max-width: 700px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #1e40af;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #2563eb;
+    }
+
+    .probability {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌤 Sobanuza AI yawe ubashe kwigira Muhinzi-Mworozi</h1>
+    <h2>Ni iki Wifuza kumenya, gusobanuza kubuhinzi bwawe cyangwa Ubworozi bwawe?</h2>
+  </header>
+
+  <section class="card">
+    <h2>🖱️ Kanda hano utubaze icyo wifuza</h2>
+    <button class="button" onclick="openCodyBot()">Tubaze</button>
+    <p class="probability">🌥 IMVURA ISHOBORA KUGWA- Rain Possible</p>
+    <p id="rainValue">Probability: 45%</p>
+    <p class="note">Witwaze Umutaka</p>
+  </section>
+
+  <script>
+    function updateRainPrediction(probability) {
+      document.getElementById("rainValue").innerText = "Probability: " + probability + "%";
+    }
+
+    // Example usage
+    updateRainPrediction(45); 
+
+    function openCodyBot() {
+      window.location.href = "https://share.cody.bot/9f9e3019-8c69-4b65-977f-b6fb18700f5d";
+    }
+  </script>
+
+</body>
+</html>
